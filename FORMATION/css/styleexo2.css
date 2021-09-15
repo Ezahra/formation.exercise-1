@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(201, 201, 201);
+}
+.menuGauchemainDiv{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgb(39, 66, 189);
+    width: 80%;
+    height: 80vh;
+    margin: 20px auto 20px auto;
+    border: rgba(16, 18, 179, 0.514) 1px solid;
+    border-radius :1%;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline;
+    padding: 5px;
+    border-radius:5% ;
+}
+nav li{
+    background-color: rgb(180, 180, 180);
+}
+nav a{
+    text-decoration: none;
+}
+\---Animation----
+.animation{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform-origin: 80%, 30%;
+    transform: rotate(30deg);
+   
+    animation-name: testAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2500ms;
+}
+@keyframes testAnim {
+    from{
+        transform: rotate(0deg) scale(0.1);
+        background-color: chartreuse;
+    }
+    50%{
+        background-color: darkgrey;
+    }
+    to{
+        transform: rotate(359deg) scale(1.5)translate(300px,500px);
+        background-color: crimson;
+    }
+}    

@@ -1,0 +1,60 @@
+/*-----------------------
+        page principale
+    -------------------*/
+body{
+    background-color: rgb(201, 201, 201);
+}
+.menuGauchemainDiv{
+    position: sticky;
+    background-color: rgb(39, 66, 189);
+    width: 80%;
+    height: 5vh;
+    margin: 20px auto 20px auto;
+    border: rgba(7, 10, 160, 0.514) 1px line;
+    border-radius :1%;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline;
+    padding: 5px;
+    border-radius:5%;
+    transition-property: all;
+}
+nav li{
+    background-color: rgb(180, 180, 180);
+}
+nav a{
+    text-decoration: none;
+}
+/*---Animation----
+.animation{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform-origin: 80%, 30%;
+    transform: rotate(30deg);
+   
+    animation-name: testAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2500ms;
+}*/
+@keyframes testAnim {
+    from{
+        transform: rotate(0deg) scale(0.1);
+        background-color: chartreuse;
+    }
+    50%{
+        background-color: darkgrey;
+    }
+    to{
+        transform: rotate(359deg) scale(1.5);
+        background-color: crimson;
+    }
+}    
